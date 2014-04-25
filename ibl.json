@@ -112,6 +112,9 @@
                         "requests / s": "#6ED0E0",
                         "build time (s) moving average": "#E24D42"
                     },
+                    "aliasYAxis": {
+                        "requests / s": 2
+                      },
                     "title": "Nitro requests and build time"
                 },
                 {
