@@ -38,7 +38,7 @@
                     "points": false,
                     "pointradius": 5,
                     "bars": false,
-                    "stack": true,
+                    "stack": false,
                     "spyable": true,
                     "options": false,
                     "legend": true,
@@ -61,7 +61,7 @@
                             "target": "aliasSub(sortByMaxima(stats.timers.bbc.ibl.live.responses.*.*.time.count_ps), 'stats.timers.bbc.ibl.live.responses.(.+).time.count_ps', '\\1')"
                         }
                     ],
-                    "title": "Page views / second (stacked)"
+                    "title": "Page views / second"
                 },
                 {
                     "span": 6,
