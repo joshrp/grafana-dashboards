@@ -55,7 +55,7 @@
                     },
                     "targets": [
                         {
-                            "target": "sortByMaxima(stats.timers.bbc.ibl.live.responses.*.time.count_ps)"
+                            "target": "sortByMaxima(exclude(stats.timers.bbc.ibl.live.responses.*.time.count_ps, 'status|api'))"
                         },
                         {
                             "target": "sortByMaxima(stats.timers.bbc.ibl.live.responses.*.*.time.count_ps)"
