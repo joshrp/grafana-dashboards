@@ -102,17 +102,17 @@
                     },
                     "targets": [
                         {
-                            "target": "alias(sumSeries(stats.timers.bbc.iplayer.live.*.*.build_time.count_ps),'requests / s')"
+                            "target": "alias(sumSeries(stats.timers.bbc.ibl.live.nitro.*.count_ps),'requests / s')"
                         },
                         {
-                            "target": "alias(scale(movingAverage(averageSeries(stats.timers.bbc.iplayer.live.*.*.build_time.median),10),0.1),'build time (s) moving average')"
+                            "target": "alias(scale(movingAverage(stats.timers.bbc.ibl.live.nitro.*.median,10),0.1),'build time (s) moving average')"
                         }
                     ],
                     "aliasColors": {
                         "requests / s": "#6ED0E0",
                         "build time (s) moving average": "#E24D42"
                     },
-                    "title": "Requests and build time"
+                    "title": "Nitro requests and build time"
                 },
                 {
                     "span": 6,
