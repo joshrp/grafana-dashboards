@@ -58,7 +58,7 @@
                             "target": "aliasSub(sortByMaxima(exclude(stats.timers.bbc.ibl.live.responses.*.time.count_ps, 'status|api')), 'stats.timers.bbc.ibl.live.responses.(.+).time.count_ps', '\\1')"
                         },
                         {
-                            "target": "aliasSub(sortByMaxima(stats.timers.bbc.ibl.live.responses.*.*.time.count_ps), 'stats.timers.bbc.ibl.live.responses.*.(.+).time.count_ps', '\\1')"
+                            "target": "aliasSub(sortByMaxima(stats.timers.bbc.ibl.live.responses.*.*.time.count_ps), 'stats.timers.bbc.ibl.live.responses.(.+).time.count_ps', '\\1')"
                         }
                     ],
                     "title": "Page views / second (stacked)"
