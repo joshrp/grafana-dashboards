@@ -105,7 +105,7 @@
                             "target": "alias(sumSeries(stats.timers.bbc.ibl.live.nitro.*.count_ps),'requests / s')"
                         },
                         {
-                            "target": "alias(movingAverage(averageSeries(stats.timers.bbc.ibl.live.nitro.*.mean),100),'build time (s) moving average')"
+                            "target": "alias(movingAverage(stats.timers.bbc.ibl.live.nitro.*.mean,100),'build time (s) moving average')"
                         }
                     ],
                     "aliasColors": {
@@ -156,7 +156,7 @@
                     },
                     "targets": [
                         {
-                            "target": "alias(stats.counters.bbc.iplayer.live.exceptions.bambooError500.count, 'Bamboo 500s / s')"
+                            "target": "alias(stats.counters.bbc.iplayer.live.exceptions.BAMBOO_SERVERERROR.count, 'Bamboo 500s / s')"
                         },
                         {
                             "target": "alias(stats.counters.bbc.ibl.live.exceptions.critical_request_failure.count, 'iBL critical failure / s')"
