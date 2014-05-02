@@ -105,7 +105,7 @@
                             "target": "alias(movingAverage(sumSeries(stats.timers.bbc.ibl.live.nitro.*.count_ps), 100),'requests / s')"
                         },
                         {
-                            "target": "movingAverage(aliasByNode(stats.timers.bbc.ibl.live.nitro.*.mean, 6),100)"
+                            "target": "aliasByNode(movingAverage(stats.timers.bbc.ibl.live.nitro.*.mean, 100), 6)"
                         }
                     ],
                     "aliasColors": {
