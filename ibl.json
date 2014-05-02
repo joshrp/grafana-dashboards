@@ -109,7 +109,7 @@
                         }
                     ],
                     "aliasColors": {
-                        "requests / s": "#6ED0E0",
+                        "requests / s": "#363636",
                         "build time (s) moving average": "#E24D42"
                     },
                     "aliasYAxis": {
