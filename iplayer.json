@@ -150,7 +150,7 @@
                     },
                     "targets": [
                         {
-                            "target": "alias(stats.counters.bbc.iplayer.live.exceptions.BAMBOO_SERVERERROR.count, 'Bamboo 500s / s')"
+                            "target": "alias(stats.counters.bbc.iplayer.live.exceptions.bambooError500.count, 'Bamboo 500s / s')"
                         },
                         {
                             "target": "alias(stats.counters.bbc.ibl.live.exceptions.critical_request_failure.count, 'iBL critical failure / s')"
