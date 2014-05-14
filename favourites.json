@@ -53,10 +53,10 @@
           },
           "targets": [
             {
-              "target": "alias(stats.timers.bbc.iplayer.live.atoz.index.build_time.count_ps, 'requests per second')"
+              "target": "alias(stats.timers.bbc.iplayer.live.json.favouriteprogrammes.build_time.count_ps, 'requests per second')"
             },
             {
-              "target": "alias(stats.timers.bbc.iplayer.live.atoz.index.build_time.mean, 'mean build time (ms)')"
+              "target": "alias(stats.timers.bbc.iplayer.live.json.favouriteprogrammes.build_time.mean, 'mean build time (ms)')"
             }
           ],
           "aliasColors": {
