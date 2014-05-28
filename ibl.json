@@ -214,11 +214,10 @@
                         }
                     ],
                     "aliasColors": {
-                        "requests / s": "#363636",
-                        "build time (s) moving average": "#E24D42"
+                        "requests": "#363636"
                     },
                     "aliasYAxis": {
-                        "requests / s": 2
+                        "requests": 2
                       },
                     "title": "iBL requests"
                 }
