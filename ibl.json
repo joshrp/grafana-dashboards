@@ -176,15 +176,19 @@
                     "editable": true,
                     "type": "graphite",
                     "x-axis": true,
-                    "y-axis": false,
+                    "y-axis": true,
                     "scale": 1,
+                    "y_formats": [
+                        "none",
+                        "none"
+                    ],
                     "grid": {
-                        "max": 0.9,
-                        "min": 0.1
+                        "max": null,
+                        "min": 0
                     },
                     "resolution": 100,
                     "lines": true,
-                    "fill": 5,
+                    "fill": 0,
                     "linewidth": 2,
                     "points": false,
                     "pointradius": 5,
@@ -199,28 +203,24 @@
                     "percentage": false,
                     "zerofill": true,
                     "nullPointMode": "connected",
-                    "steppedLine": true,
+                    "steppedLine": false,
                     "tooltip": {
                         "value_type": "cumulative",
                         "query_as_alias": true
                     },
                     "targets": [
                         {
-                            "target": "aliasByMetric(stats.gauges.bbc.iplayer.ci.build.*)"
-                        },
-                        {
-                            "target": "alias(drawAsInfinite(stats.counters.bbc.iplayer.ci.build.deploy.count),'deploys')"
+                            "target": "alias(sumSeries(stats.timers.bbc.ibl.live.responses.*.count),'requests')"
                         }
                     ],
                     "aliasColors": {
-                        "failure": "rgb(226, 77, 66)",
-                        "success": "rgb(126, 178, 109)",
-                        "deploys": "rgb(234, 184, 57)"
+                        "requests / s": "#363636",
+                        "build time (s) moving average": "#E24D42"
                     },
                     "aliasYAxis": {
-                        "deploys": 2
-                    },
-                    "title": "CI status"
+                        "requests / s": 2
+                      },
+                    "title": "iBL requests"
                 }
             ]
         }
