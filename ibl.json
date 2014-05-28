@@ -210,7 +210,7 @@
                     },
                     "targets": [
                         {
-                            "target": "alias(sumSeries(stats.timers.bbc.ibl.live.responses.*.count),'requests')"
+                            "target": "alias(sumSeries(stats.timers.bbc.ibl.live.responses.time.*.count_ps,stats.timers.bbc.ibl.live.responses.time.*.*.count_ps),'requests / s')"
                         }
                     ],
                     "aliasColors": {
